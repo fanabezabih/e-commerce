@@ -1,8 +1,10 @@
+import Image from "next/image";
+
 export default function Footer() {
   return (
     <footer className="bg-black text-white pt-10 pb-3 px-4">
       <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-5 gap-8">
-   
+  
         <div>
           <div className="font-bold text-lg mb-2">Exclusive</div>
           <div className="mb-2 text-sm">Subscribe</div>
@@ -20,14 +22,14 @@ export default function Footer() {
             </button>
           </div>
         </div>
-    
+   
         <div>
           <div className="font-bold mb-2">Support</div>
           <div className="text-xs mb-1">111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.</div>
           <div className="text-xs mb-1">exclusive@gmail.com</div>
           <div className="text-xs mb-1">+88015-88888-9999</div>
         </div>
-    
+     
         <div>
           <div className="font-bold mb-2">Account</div>
           <div className="text-xs mb-1">My Account</div>
@@ -36,7 +38,7 @@ export default function Footer() {
           <div className="text-xs mb-1">Wishlist</div>
           <div className="text-xs mb-1">Shop</div>
         </div>
-      
+    
         <div>
           <div className="font-bold mb-2">Quick Link</div>
           <div className="text-xs mb-1">Privacy Policy</div>
@@ -48,18 +50,18 @@ export default function Footer() {
         <div>
           <div className="font-bold mb-2">Download App</div>
           <div className="text-xs mb-1">Save $3 With App New User Only</div>
-          <div className="flex space-x-2 my-2">
-            <img src="/qr-code.png" alt="QR Code" className="h-14" />
+          <div className="flex space-x-2 my-2 items-center">
+            <Image src="/qr-code.png" alt="QR Code" width={56} height={56} className="h-14 w-auto" />
             <div>
-              <img src="/playstore.svg" alt="Play Store" className="h-6 mb-1" />
-              <img src="/appstore.svg" alt="App Store" className="h-6" />
+              <Image src="/playstore.svg" alt="Play Store" width={96} height={24} className="h-6 mb-1 w-auto" />
+              <Image src="/appstore.svg" alt="App Store" width={96} height={24} className="h-6 w-auto" />
             </div>
           </div>
           <div className="flex space-x-2 mt-2">
-            <img src="/icons/facebook.svg" className="h-5" alt="Facebook" />
-            <img src="/icons/twitter.svg" className="h-5" alt="Twitter" />
-            <img src="/icons/instagram.svg" className="h-5" alt="Instagram" />
-            <img src="/icons/linkedin.svg" className="h-5" alt="LinkedIn" />
+            <Image src="/icons/facebook.svg" alt="Facebook" width={20} height={20} className="h-5 w-5" />
+            <Image src="/icons/twitter.svg" alt="Twitter" width={20} height={20} className="h-5 w-5" />
+            <Image src="/icons/instagram.svg" alt="Instagram" width={20} height={20} className="h-5 w-5" />
+            <Image src="/icons/linkedin.svg" alt="LinkedIn" width={20} height={20} className="h-5 w-5" />
           </div>
         </div>
       </div>

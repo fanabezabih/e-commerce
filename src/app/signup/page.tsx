@@ -3,6 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Footer from "../shared-components/Footer";
 import Header from "../shared-components/Header";
+import Image from "next/image";
 
 export default function SignupPage() {
   const [name, setName] = useState("");
@@ -11,28 +12,26 @@ export default function SignupPage() {
 
   return (
     <div className="min-h-screen flex flex-col">
-     
       <div className="bg-black text-white text-center py-2 text-xs">
         Summer Sale For All Swim Suits And Free Express Delivery – OFF 50%!
         <a href="#" className="underline ml-2">shopNow</a>
         <span className="float-right mr-8">English</span>
       </div>
       <Header />
-
-   
       <main className="flex-1 flex flex-col justify-between bg-white">
         <div className="flex flex-1 items-stretch">
           <div className="flex flex-row w-full max-w- overflow-hidden min-h-[480px] mx-auto mb-35 mt-10">
-      
             <div className="w-3/5 min-h-[480px] flex-shrink-0 flex-grow-0 -ml10">
-              <img
+              <Image
                 src="/images/side-image.png"
                 alt="Shopping visual"
+                width={900}
+                height={700}
                 className="w-full h-full object-cover object-left"
-                style={{ display: 'block', width: '900px', height: '700px' }}
+                style={{ display: 'block' }}
+                priority
               />
             </div>
-       
             <div className="w-2/5 flex flex-col justify-center px-10 py-14">
               <div className="flex flex-col" style={{maxWidth: '390px'}}>
                 <h2 className="text-2xl font-bold mb-2">Create an account</h2>
@@ -77,7 +76,7 @@ export default function SignupPage() {
                     style={{ minHeight: '44px' }}
                   >
                     <span className="flex items-center">
-                      <img src="/images/google.svg" alt="Google" className="h-5 w-5 mr-2" />
+                      <Image src="/images/google.svg" alt="Google" width={20} height={20} className="h-5 w-5 mr-2" />
                       <span className="text-sm font-medium text-gray-700">Sign up with Google</span>
                     </span>
                   </button>
