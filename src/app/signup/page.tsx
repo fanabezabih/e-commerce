@@ -12,11 +12,7 @@ export default function SignupPage() {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <div className="bg-black text-white text-center py-2 text-xs">
-        Summer Sale For All Swim Suits And Free Express Delivery – OFF 50%!
-        <a href="#" className="underline ml-2">shopNow</a>
-        <span className="float-right mr-8">English</span>
-      </div>
+
       <Header />
       <main className="flex-1 flex flex-col justify-between bg-white">
         <div className="flex flex-1 items-stretch">
@@ -25,15 +21,15 @@ export default function SignupPage() {
               <Image
                 src="/images/side-image.png"
                 alt="Shopping visual"
-                width={900}
-                height={700}
+                width={500}
+                height={500}
                 className="w-full h-full object-cover object-left"
                 style={{ display: 'block' }}
                 priority
               />
             </div>
             <div className="w-2/5 flex flex-col justify-center px-10 py-14">
-              <div className="flex flex-col" style={{maxWidth: '390px'}}>
+              <div className="flex flex-col" style={{ maxWidth: '390px' }}>
                 <h2 className="text-2xl font-bold mb-2">Create an account</h2>
                 <p className="text-sm text-gray-500 mb-8">Enter your details below</p>
                 <form>
